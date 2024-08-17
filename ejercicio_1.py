@@ -26,3 +26,16 @@ Requerimientos indispensables:
 
 El sistema debe solicitar el "Nombre", "Clave de departamento" y "antigüedad" del trabajador.
 Posteriormente el programa debe mostrar un mensaje en pantalla que contenga el nombre del trabajador y los días de vacaciones a los que tiene derecho"""
+
+
+nombre = input("!Hola, ingresa tu nombre y oprime enter: ")
+departamento = int(input("""
+Ingresa el numero de tu departamento y oprime enter;
+1-Departamento de atención al cliente.dfs
+3-Gerencia.
+:"""))
+antiguedad = int(input("Ingresa tus años de antigüedad y oprime enter ; "))
+
+if departamento == 1
+if antiguedad == 1
+print(f"{nombre} perteneces al departamento de Atención al cliente, tienes {antiguedad} de antigüedad y te corresponden 6 días de vacaciones")
