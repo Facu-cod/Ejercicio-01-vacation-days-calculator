@@ -31,11 +31,34 @@ Posteriormente el programa debe mostrar un mensaje en pantalla que contenga el n
 nombre = input("!Hola, ingresa tu nombre y oprime enter: ")
 departamento = int(input("""
 Ingresa el numero de tu departamento y oprime enter;
-1-Departamento de atención al cliente.dfs
+1-Departamento de atención al cliente.
+2-Departamento de Logística.
 3-Gerencia.
 :"""))
-antiguedad = int(input("Ingresa tus años de antigüedad y oprime enter ; "))
+antiguedad = int(input("Ingresa tus años de antigüedad y oprime enter : "))
 
-if departamento == 1
-if antiguedad == 1
-print(f"{nombre} perteneces al departamento de Atención al cliente, tienes {antiguedad} de antigüedad y te corresponden 6 días de vacaciones")
+if departamento == 1:
+    if antiguedad == 1:
+        print(f"{nombre} perteneces al departamento de Atención al cliente, tienes {antiguedad} de antigüedad y te corresponden 6 días de vacaciones")
+    elif antiguedad > 1 and antiguedad < 7:
+        print(f"{nombre} perteneces al departamento de Atención al cliente, tienes {antiguedad} de antigüedad y te corresponden 14 días de vacaciones")
+    elif antiguedad > 7:
+        print(f"{nombre} perteneces al departamento de Atención al cliente, tienes {antiguedad} de antigüedad y te corresponden 20 días de vacaciones")
+
+if departamento == 2:
+    if antiguedad == 1:
+        print(f"{nombre} perteneces al departamento de Logística, tienes {antiguedad} de antigüedad y te corresponden 7 días de vacaciones")
+    elif antiguedad > 1 and antiguedad < 7:
+        print(f"{nombre} perteneces al departamento de Logística, tienes {antiguedad} de antigüedad y te corresponden 15 días de vacaciones")
+    elif antiguedad > 7:
+        print(f"{nombre} perteneces al departamento de Logística, tienes {antiguedad} de antigüedad y te corresponden 22 días de vacaciones")
+
+if departamento == 3:
+    if antiguedad == 1:
+        print(f"{nombre} perteneces al departamento de Gerencia, tienes {antiguedad} de antigüedad y te corresponden 10 días de vacaciones")
+    elif antiguedad > 1 and antiguedad < 7:
+        print(f"{nombre} perteneces al departamento de Gerencia, tienes {antiguedad} de antigüedad y te corresponden 20 días de vacaciones")
+    elif antiguedad > 7:
+        print(f"{nombre} perteneces al departamento de Gerencia, tienes {antiguedad} de antigüedad y te corresponden 30 días de vacaciones")
+else:
+    print("El numero ingresado no corresponde a un departamento de la empresa.")
