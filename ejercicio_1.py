@@ -44,6 +44,8 @@ if departamento == 1:
         print(f"{nombre} perteneces al departamento de Atención al cliente, tienes {antiguedad} años de antigüedad y te corresponden 14 días de vacaciones.")
     elif antiguedad > 7:
         print(f"{nombre} perteneces al departamento de Atención al cliente, tienes {antiguedad} años de antigüedad y te corresponden 20 días de vacaciones.")
+    elif antiguedad < 1:
+        print(f"{nombre} tienes menos de 1 año de antigüedad y te corresponden 0 días de vacaciones.")
 elif departamento == 2:
     if antiguedad == 1:
         print(f"{nombre} perteneces al departamento de Logística, tienes {antiguedad} años de antigüedad y te corresponden 7 días de vacaciones.")
@@ -51,6 +53,8 @@ elif departamento == 2:
         print(f"{nombre} perteneces al departamento de Logística, tienes {antiguedad} años de antigüedad y te corresponden 15 días de vacaciones.")
     elif antiguedad > 7:
         print(f"{nombre} perteneces al departamento de Logística, tienes {antiguedad} años de antigüedad y te corresponden 22 días de vacaciones.")
+    elif antiguedad < 1:
+        print(f"{nombre} tienes menos de 1 año de antigüedad y te corresponden 0 días de vacaciones.")
 elif departamento == 3:
     if antiguedad == 1:
         print(f"{nombre} perteneces al departamento de Gerencia, tienes {antiguedad} años de antigüedad y te corresponden 10 días de vacaciones.")
@@ -58,5 +62,7 @@ elif departamento == 3:
         print(f"{nombre} perteneces al departamento de Gerencia, tienes {antiguedad} años de antigüedad y te corresponden 20 días de vacaciones.")
     elif antiguedad > 7:
         print(f"{nombre} perteneces al departamento de Gerencia, tienes {antiguedad} años de antigüedad y te corresponden 30 días de vacaciones.")
+    elif antiguedad < 1:
+        print(f"{nombre} tienes menos de 1 año de antigüedad y te corresponden 0 días de vacaciones.")
 else:
     print("El numero ingresado no corresponde a un departamento de la empresa.")
